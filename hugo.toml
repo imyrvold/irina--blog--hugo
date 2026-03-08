@@ -4,6 +4,9 @@ defaultContentLanguage = "ru"
 title = "Блог Ирины"
 theme = "PaperMod"
 paginate = 10
+[services]
+  [services.disqus]
+    shortname = "irina-blog-1"
 
 [params]
   description = "Моя жизнь в Норвегии как русский"
@@ -15,6 +18,7 @@ paginate = 10
   showBreadCrumbs = true
   showCodeCopyButtons = false
   showToc = false
+  comments = true
   dateFormat = "02.01.2006"
 
   [params.homeInfoParams]
