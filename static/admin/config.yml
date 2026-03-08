@@ -2,8 +2,7 @@ backend:
   name: github
   repo: imyrvold/irina--blog--hugo
   branch: main
-  base_url: https://irina.myrvold.blog
-  auth_endpoint: auth
+  site_domain: irina.myrvold.blog
 
 locale: "ru"
 
