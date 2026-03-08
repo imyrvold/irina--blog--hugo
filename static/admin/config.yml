@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: imyrvold/irina-blog-hugo
+  repo: imyrvold/irina--blog--hugo
   branch: main
 
 locale: "ru"
