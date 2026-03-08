@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: imyrvold/irina-blog-hugo
   branch: main
 
 locale: "ru"
