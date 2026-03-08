@@ -1,0 +1,53 @@
+baseURL = "https://irina.myrvold.blog/"
+languageCode = "ru"
+defaultContentLanguage = "ru"
+title = "Блог Ирины"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  description = "Моя жизнь в Норвегии как русский"
+  author = "Ирина"
+  defaultTheme = "auto"
+  showReadingTime = false
+  showShareButtons = true
+  showPostNavLinks = true
+  showBreadCrumbs = true
+  showCodeCopyButtons = false
+  showToc = false
+  dateFormat = "02.01.2006"
+
+  [params.homeInfoParams]
+    Title = "Добро пожаловать в блог Ирины!"
+    Content = "Моя жизнь в Норвегии как русский"
+
+  [params.profileMode]
+    enabled = false
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Записи"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Теги"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "archive"
+    name = "Архив"
+    url = "/archive/"
+    weight = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  tag = "tags"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

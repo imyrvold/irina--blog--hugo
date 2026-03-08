@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: "ru"
+
+media_folder: "static/images"
+public_folder: "/images"
+
+collections:
+  - name: "posts"
+    label: "Записи"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}{{month}}{{day}}"
+    fields:
+      - { label: "Дата", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm" }
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - { label: "Описание", name: "description", widget: "string" }
+      - { label: "Теги", name: "tags", widget: "list", default: ["norway"] }
+      - { label: "Черновик", name: "draft", widget: "boolean", default: false }
+      - { label: "Текст", name: "body", widget: "markdown" }
